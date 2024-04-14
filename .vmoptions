@@ -1,0 +1,2 @@
+-Duser.timezone=UTC
+-Dlogging.level.web=trace

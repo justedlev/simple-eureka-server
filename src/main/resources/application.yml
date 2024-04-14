@@ -1,0 +1,10 @@
+server:
+  port: ${PORT:8761}
+
+spring:
+  application:
+    name: '@project.name@'
+  config:
+    import:
+      - classpath:/eureka.yml
+      - classpath:/logging.yml
