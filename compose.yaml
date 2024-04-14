@@ -1,6 +1,6 @@
 name: justedlev-microservice
 services:
-  server:
+  simple-eureka-server:
     build:
       context: .
     container_name: simple-eureka-server
