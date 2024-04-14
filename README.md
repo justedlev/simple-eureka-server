@@ -13,7 +13,7 @@
 
 ## 📋 About
 
-__Simple Eureka Server__ it's an *Service Discovery* for easy launch and using, based on the Spring framework 6 and
+__Simple Eureka Server__ it's an secure *Service Discovery* for easy launch and using, based on the Spring framework 6 and
 eureka server.
 
 ## ▶️ Run
