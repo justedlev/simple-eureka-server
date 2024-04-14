@@ -8,3 +8,5 @@ spring:
     import:
       - classpath:/eureka.yml
       - classpath:/logging.yml
+      - classpath:/security.yml
+      - classpath:/management.yml

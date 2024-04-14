@@ -1,10 +1,10 @@
 name: justedlev-microservice
 services:
-  eureka-server:
+  server:
     build:
       context: .
-    container_name: eureka-server
-    image: justedlev/eureka-server:1.0.0-SNAPSHOT
+    container_name: simple-eureka-server
+    image: justedlev/simple-eureka-server:1.0.0-SNAPSHOT
     env_file:
       - docker.env
     ports:
