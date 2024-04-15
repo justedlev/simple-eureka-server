@@ -13,7 +13,7 @@
 
 ## 📋 About
 
-__Simple Eureka Server__ it's an secure *Service Discovery* for easy launch and using, based on the Spring framework 6 and
+__Simple Eureka Server__ it's a secure *Service Discovery* for easy launch and using, based on the Spring framework 6 and
 eureka server.
 
 ## ▶️ Run
@@ -26,6 +26,24 @@ and [jvm options](.vmoptions)
 
 ### 🚢 Docker
 
-[Docker Hub](https://hub.docker.com/repository/docker/justedlev/simple-eureka-server/general)
+I have a repository on [Docker Hub](https://hub.docker.com/repository/docker/justedlev/simple-eureka-server/general)
 
-Run with [Docker](README.Docker.md)
+### 🗂️ Docker compose
+
+Simple command to run the container: `docker compose up -d --build`
+
+The full compose.yaml that I personally use
+
+```yaml
+name: justedlev-microservice
+services:
+  simple-eureka-server:
+    build:
+      context: .
+    container_name: simple-eureka-server
+    image: justedlev/simple-eureka-server:1.0.0-SNAPSHOT
+    env_file:
+      - docker.env
+    ports:
+      - 8761:8761
+```
