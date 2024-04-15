@@ -5,7 +5,9 @@ services:
       context: .
     container_name: simple-eureka-server
     image: justedlev/simple-eureka-server:1.0.0-SNAPSHOT
-    env_file:
-      - docker.env
+    entrypoint:
+      USERNAME: {example}
+      PASSWORD: {example}
+      SERVICE_DISCOVERY_ZONE: http://localhost:${server.port}/eureka
     ports:
       - 8761:8761
