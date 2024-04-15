@@ -5,9 +5,8 @@ services:
     image: justedlev/simple-eureka-server:1.0.0-SNAPSHOT
     build:
       context: .
-    entrypoint:
-      USERNAME: {example}
-      PASSWORD: {example}
-      SERVICE_DISCOVERY_ZONE: http://localhost:${server.port}/eureka
+    environment:
+      USERNAME: "{example}"
+      PASSWORD: "{example}"
     ports:
       - 8761:8761
