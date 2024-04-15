@@ -2,9 +2,11 @@ name: justedlev-microservice
 services:
   simple-eureka-server:
     container_name: simple-eureka-server
+    image: justedlev/simple-eureka-server:1.0.0-SNAPSHOT
     build:
       context: .
-    env_file:
-      - docker.env
+    environment:
+      USERNAME: "{example}"
+      PASSWORD: "{example}"
     ports:
       - 8761:8761
