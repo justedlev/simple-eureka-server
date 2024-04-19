@@ -7,6 +7,5 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-    enabled: false
     service-url:
       defaultZone: ${SERVICE_DISCOVERY_ZONE:http://localhost:${server.port}/eureka}
