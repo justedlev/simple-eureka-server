@@ -38,12 +38,13 @@ The full compose.yaml that I personally use
 name: justedlev-microservice
 services:
   simple-eureka-server:
-    build:
-      context: .
     container_name: simple-eureka-server
     image: justedlev/simple-eureka-server:1.0.0-SNAPSHOT
-    env_file:
-      - docker.env
+    build:
+      context: .
+    environment:
+      USERNAME: "{example}"
+      PASSWORD: "{example}"
     ports:
       - 8761:8761
 ```
