@@ -11,6 +11,11 @@
 # Create a stage for resolving and downloading dependencies.
 FROM openjdk:17-jdk-alpine AS deps
 
+LABEL maintainer="Justedlev"
+LABEL version="1.0.0-SNAPSHOT"
+LABEL name="simple-eureka-server"
+LABEL description="Service Discovery"
+
 WORKDIR /build
 
 # Copy the mvnw wrapper with executable permissions.
