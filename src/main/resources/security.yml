@@ -3,3 +3,4 @@ spring:
     user:
       name: ${USERNAME:user}
       password: ${PASSWORD}
+      roles: ${ROLES:system}
