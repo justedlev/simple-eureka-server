@@ -18,7 +18,7 @@
 		<spring-cloud.version>2023.0.1</spring-cloud.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
-		<jar.manifest.packageName>io.github.justedlev.microservice</jar.manifest.packageName>
+		<jar.manifest.packageName>dev.justedlev</jar.manifest.packageName>
 	</properties>
 	<dependencies>
 		<dependency>

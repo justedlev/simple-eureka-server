@@ -4,8 +4,9 @@ eureka:
     app-group-name: justedlev-microservice
     appname: ${spring.application.name}
     prefer-ip-address: true
+    hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
-    service-url:
-      defaultZone: ${SERVICE_DISCOVERY_ZONE:http://localhost:${server.port}/eureka}
+#    service-url:
+#      defaultZone: ${SERVICE_DISCOVERY_ZONE:http://${spring.security.user.name}:${spring.security.user.password}@localhost:${server.port}/eureka}

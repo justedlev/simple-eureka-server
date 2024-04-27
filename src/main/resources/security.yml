@@ -1,6 +1,6 @@
 spring:
   security:
     user:
-      name: ${USERNAME:user}
+      name: ${USERNAME:eureka}
       password: ${PASSWORD}
       roles: ${ROLES:system}
