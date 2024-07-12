@@ -21,8 +21,8 @@ eureka server.
 ### 🛠️ Intellij
 
 Clone the repository using `git clone https://github.com/Justedlev/simple-eureka-server.git` and after that run the app local,
-you can use the simple [run configuration](.run%2FDefault.run.xml), that based on [.env](.env)
-and [jvm options](.vmoptions)
+you can use the simple [run configuration](.run%2FDefault.run.xml), that based on [.env](../.env)
+and [jvm options](../.vmoptions)
 
 ### 🚢 Docker
 
@@ -41,7 +41,7 @@ services:
     container_name: simple-eureka-server
     image: justedlev/simple-eureka-server:1.0.0-SNAPSHOT
     build:
-      context: .
+      context: ..
     environment:
       USERNAME: "{example}"
       PASSWORD: "{example}"
