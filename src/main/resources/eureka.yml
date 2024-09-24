@@ -1,12 +1,12 @@
 eureka:
   instance:
     instance-id: ${spring.application.name}
-    app-group-name: justedlev-microservice
+    app-group-name: justedlev-msrv
     appname: ${spring.application.name}
     prefer-ip-address: true
     hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
-#    service-url:
-#      defaultZone: ${SERVICE_DISCOVERY_ZONE:http://${spring.security.user.name}:${spring.security.user.password}@localhost:${server.port}/eureka}
+  server:
+    enable-self-preservation: false
