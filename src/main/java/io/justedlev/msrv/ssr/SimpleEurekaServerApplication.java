@@ -1,4 +1,4 @@
-package dev.justedlev;
+package io.justedlev.msrv.ssr;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
