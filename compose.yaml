@@ -1,12 +1,12 @@
-name: justedlev-microservice
+name: justedlev-msrv
 services:
-  simple-eureka-server:
-    container_name: simple-eureka-server
-    image: justedlev/simple-eureka-server:1.0.0-SNAPSHOT
+  service-registry:
+    container_name: service-registry
+    image: justedlev/simple-eureka-server:1.1.0
     build:
       context: .
     environment:
-      USERNAME: "{example}"
-      PASSWORD: "{example}"
+      spring_security_user_name: "{example}"
+      spring_security_user_password: "{example}"
     ports:
-      - 8761:8761
+      - "8761:8761"
