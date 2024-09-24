@@ -1,4 +1,4 @@
 logging:
   file:
-    path: ./.logs
+    path: ./logs
     name: ${logging.file.path}/latest.log
