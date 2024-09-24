@@ -1,20 +1,23 @@
 <div id="header" align="center">
     <h1>Simple Eureka Server</h1>
     <h3>🚚 Service Discovery</h3>
-    <div id="badges">
-        <img alt="language" src="https://img.shields.io/badge/Java%2017-e6892e">
-        <img alt="framework" src="https://img.shields.io/badge/Spring%20Framework%206-6cb52d">
-        <img alt="framework" src="https://img.shields.io/badge/Spring%20Boot%203-6cb52d">
-        <img alt="GitHub" src="https://img.shields.io/github/license/Justedlev/simple-eureka-server">
-        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Justedlev/simple-eureka-server">
-        <img alt="GitHub issues" src="https://img.shields.io/github/issues/Justedlev/simple-eureka-server">
-    </div>
+</div>
+
+<div id="badges" align="center">
+
+[![language](https://img.shields.io/badge/Java%2017-e6892e.svg?logo=openjdk&logoColor=white)](https://github.com/justedlev/simple-eureka-server)
+[![framework](https://img.shields.io/badge/Spring%20Boot%203-6DB33F.svg?logo=springboot&logoColor=white)](https://docs.spring.io/spring-boot/index.html)
+[![Docker Image Version](https://img.shields.io/docker/v/justedlev/simple-eureka-server?logo=docker&label=simple-eureka-server)](https://hub.docker.com/repository/docker/justedlev/simple-eureka-server)
+[![license](https://img.shields.io/github/license/justedlev/simple-eureka-server)](https://www.apache.org/licenses/LICENSE-2.0.txt)
+[![stars](https://img.shields.io/github/stars/justedlev/simple-eureka-server)](https://github.com/justedlev/simple-eureka-server/star)
+[![issues](https://img.shields.io/github/issues/justedlev/simple-eureka-server)](https://github.com/justedlev/simple-eureka-server/issues)
+
 </div>
 
 ## 📋 About
 
-__Simple Eureka Server__ it's a secure *Service Discovery* for easy launch and using, based on the Spring framework 6 and
-eureka server.
+__Simple Eureka Server__ it's a secure `Service Discovery` for easy launch and using, based on the `Spring Boot 3` and
+`Eureka Server`.
 
 ## ▶️ Run
 
@@ -35,16 +38,16 @@ Simple command to run the container: `docker compose up -d --build`
 The full compose.yaml that I personally use
 
 ```yaml
-name: justedlev-microservice
+name: justedlev-msrv
 services:
-  simple-eureka-server:
-    container_name: simple-eureka-server
-    image: justedlev/simple-eureka-server:1.0.0-SNAPSHOT
+  service-registry:
+    container_name: service-registry
+    image: justedlev/simple-eureka-server:1.1.0
     build:
-      context: ..
+      context: .
     environment:
-      USERNAME: "{example}"
-      PASSWORD: "{example}"
+      spring_security_user_name: "{example}"
+      spring_security_user_password: "{example}"
     ports:
-      - 8761:8761
+      - "8761:8761"
 ```

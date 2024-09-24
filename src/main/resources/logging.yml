@@ -1,4 +1,9 @@
 logging:
   file:
-    path: ./.logs
+    path: ./logs
     name: ${logging.file.path}/latest.log
+  threshold:
+    console: INFO
+    file: DEBUG
+  level:
+    root: debug
