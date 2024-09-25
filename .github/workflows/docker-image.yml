@@ -6,11 +6,9 @@ on:
 env:
   REGISTRY: docker.io
   IMAGE_NAME: ${{ github.repository }}
-  TAG: latest
 
 jobs:
   build:
-    name: Build Docker image
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -44,5 +42,5 @@ jobs:
         with:
           context: "{{defaultContext}}"
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
