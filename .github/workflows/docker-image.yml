@@ -3,6 +3,7 @@ name: Publish Docker image
 on:
   release:
     tags: [ "v*.*.*" ]
+  workflow_dispatch:
 
 env:
   REGISTRY: docker.io
