@@ -1,14 +1,15 @@
 name: Publish Docker image
 
 on:
-  push:
-    branches: [ "main" ]
-    # Publish semver tags as releases.
-    tags:
-      # set latest tag for default branch
-      - type=raw,value=latest,enable={{is_default_branch}}
-      # tag is v0.1.2 output 0.1.2
-      - type=semver,pattern={{version}}
+  #  push:
+  #    branches: [ "main" ]
+  #    # Publish semver tags as releases.
+  #    tags:
+  #      # set latest tag for default branch
+  #      - type=raw,value=latest,enable={{is_default_branch}}
+  #      # tag is v0.1.2 output 0.1.2
+  #      - type=semver,pattern={{version}}
+  [ workflow_dispatch ]
 
 env:
   REGISTRY: docker.io
