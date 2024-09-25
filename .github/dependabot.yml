@@ -8,6 +8,9 @@ updates:
       - "justedlev"
     schedule:
       interval: "weekly"
+      schedule:
+        time: "06:00"
+        timezone: Etc/UTC
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -16,4 +19,7 @@ updates:
     assignees:
       - "justedlev"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+      schedule:
+        time: "06:00"
+        timezone: Etc/UTC
