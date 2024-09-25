@@ -42,7 +42,7 @@ name: justedlev-msrv
 services:
   service-registry:
     container_name: service-registry
-    image: justedlev/simple-eureka-server:1.1.0
+    image: justedlev/simple-eureka-server:latest
     build:
       context: .
     environment:
