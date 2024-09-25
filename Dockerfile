@@ -12,7 +12,6 @@
 FROM openjdk:17-jdk-alpine AS deps
 
 LABEL maintainer="Justedlev"
-LABEL version="1.1.1"
 LABEL name="simple-eureka-server"
 LABEL description="Service Discovery"
 
