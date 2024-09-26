@@ -5,9 +5,8 @@ services:
     image: justedlev/simple-eureka-server:latest
     build:
       context: .
-    environment:
-      spring_security_user_name: "{example}"
-      spring_security_user_password: "{example}"
+    env_file:
+      - .env
     ports:
       - "8761:8761"
     healthcheck:
