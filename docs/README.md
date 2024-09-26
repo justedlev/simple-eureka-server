@@ -35,7 +35,7 @@ I have a repository on [Docker Hub](https://hub.docker.com/repository/docker/jus
 
 Simple command to run the container: `docker compose up -d --build`
 
-The full compose.yaml that I personally use
+The full compose.yaml that I personally use with the [.env](..%2F.env)
 
 ```yaml
 name: justedlev-msrv
@@ -45,9 +45,8 @@ services:
     image: justedlev/simple-eureka-server:latest
     build:
       context: .
-    environment:
-      spring_security_user_name: "{example}"
-      spring_security_user_password: "{example}"
+    env_file:
+      - .env
     ports:
       - "8761:8761"
 ```
