@@ -10,3 +10,7 @@ services:
       spring_security_user_password: "{example}"
     ports:
       - "8761:8761"
+    healthcheck:
+      interval: 5s
+      timeout: 3s
+      test: [ "CMD", "curl", "-f", "http://localhost:8761/actuator/health", "||", "exit 1" ]
