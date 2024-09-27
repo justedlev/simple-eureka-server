@@ -9,7 +9,7 @@
 ################################################################################
 
 # Create a stage for resolving and downloading dependencies.
-FROM eclipse-temurin:17-jre-jammy AS deps
+FROM eclipse-temurin:17-jdk-jammy AS deps
 
 LABEL maintainer="Justedlev"
 LABEL name="simple-eureka-server"
