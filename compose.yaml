@@ -14,4 +14,4 @@ services:
       timeout: 3s
       test: [ "CMD", "curl", "-f", "http://localhost:${SERVER_PORT}/actuator/health", "||", "exit 1" ]
     volumes:
-      - /logs:${LOGGING_FILE_PATH}
+      - ./logs:${LOGGING_FILE_PATH}
