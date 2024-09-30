@@ -7,8 +7,12 @@ server:
 spring:
   application:
     name: '@project.name@'
+  cloud:
+    config:
+      enabled: false
   config:
     import:
+      - 'optional:configserver:'
       - classpath:/eureka.yml
       - classpath:/logging.yml
       - classpath:/security.yml
