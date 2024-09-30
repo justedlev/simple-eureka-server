@@ -1,6 +1,6 @@
 logging:
   file:
-    path: ./logs
+    path: /var/log/${spring.application.name}
     name: ${logging.file.path}/latest.log
   threshold:
     console: INFO
