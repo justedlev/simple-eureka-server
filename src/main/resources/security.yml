@@ -1,9 +1,9 @@
 spring:
   security:
     user:
-      name: ${USERNAME:eureka}
-      password: ${PASSWORD:}
-      roles: ${ROLES:system}
+      name: eureka
+      password: eureka
+      roles: system
 security:
   whitelist:
     GET:
