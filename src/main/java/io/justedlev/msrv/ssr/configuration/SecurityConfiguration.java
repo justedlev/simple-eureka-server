@@ -1,5 +1,6 @@
 package io.justedlev.msrv.ssr.configuration;
 
+import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang.ArrayUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -13,9 +14,9 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
+@RequiredArgsConstructor
 public class SecurityConfiguration {
-    @Value("${security.whitelist:}")
-    private String[] whitelist;
+    private final SecurityProperties properties;
 
     @Bean
     public SecurityFilterChain securityFilterChain(@NonNull HttpSecurity httpSecurity) throws Exception {
@@ -25,9 +26,7 @@ public class SecurityConfiguration {
                 .httpBasic(Customizer.withDefaults())
                 .logout(Customizer.withDefaults())
                 .authorizeHttpRequests(spec -> {
-                    if (ArrayUtils.isNotEmpty(whitelist)) {
-                        spec.requestMatchers(whitelist).permitAll();
-                    }
+                    properties.getWhitelist().forEach((k, v) -> spec.requestMatchers(k, v).permitAll());
                     spec.anyRequest().authenticated();
                 })
                 .build();

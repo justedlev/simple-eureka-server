@@ -24,8 +24,8 @@ __Simple Eureka Server__ it's a secure `Service Discovery` for easy launch and u
 ### 🛠️ Intellij
 
 Clone the repository using `git clone https://github.com/Justedlev/simple-eureka-server.git` and after that run the app local,
-you can use the simple [run configuration](.run%2FDefault.run.xml), that based on [.env](../.env)
-and [jvm options](../.vmoptions)
+you can use the simple [run configuration](.run/Default.run.xml), that based on [.env](.env)
+and [jvm options](.vmoptions)
 
 ### 🚢 Docker
 
@@ -35,18 +35,24 @@ I have a repository on [Docker Hub](https://hub.docker.com/repository/docker/jus
 
 Simple command to run the container: `docker compose up -d --build`
 
-The full compose.yaml that I personally use with the [.env](..%2F.env)
+The full compose.yaml that I personally use with the [.env](.env)
 
 ```yaml
 name: justedlev-msrv
 services:
   service-registry:
-    container_name: service-registry
+    container_name: ${SPRING_APPLICATION_NAME}
     image: justedlev/simple-eureka-server:latest
     build:
-      context: .
+      context: docs
     env_file:
       - .env
     ports:
-      - "8761:8761"
+      - "8761:${SERVER_PORT}"
+    healthcheck:
+      interval: 5s
+      timeout: 3s
+      test: [ "CMD", "curl", "-f", "http://localhost:${SERVER_PORT}/actuator/health", "||", "exit 1" ]
+    volumes:
+      - ./logs:${LOGGING_FILE_PATH}
 ```

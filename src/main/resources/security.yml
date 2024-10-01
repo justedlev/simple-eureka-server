@@ -1,22 +1,25 @@
 spring:
   security:
     user:
-      name: ${USERNAME:eureka}
-      password: ${PASSWORD:}
-      roles: ${ROLES:system}
+      name: eureka
+      password: eureka
+      roles: system
 security:
   whitelist:
-    - /webjars/**
-    - /v3/api-docs/**
-    - /*/v3/api-docs/**
-    - /*/*/v3/api-docs/**
-    - /swagger-ui.html
-    - /swagger-ui/**
-    - /swagger-resources
-    - /swagger-resources/**
-    - /configuration/ui
-    - /configuration/security
-    - /actuator/**
-    - /*/actuator/**
-    - /error
-    - /logout
+    GET:
+      - /webjars/**
+      - /v3/api-docs/**
+      - /*/v3/api-docs/**
+      - /*/*/v3/api-docs/**
+      - /swagger-ui.html
+      - /swagger-ui/**
+      - /swagger-resources
+      - /swagger-resources/**
+      - /configuration/ui
+      - /configuration/security
+      - /actuator/**
+      - /*/actuator/**
+      - /error
+    POST:
+      - /sso/logout
+      - /logout
