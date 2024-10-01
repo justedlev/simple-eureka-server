@@ -4,6 +4,7 @@ logging:
     name: ${logging.file.path}/latest.log
   threshold:
     console: INFO
-    file: DEBUG
+    file: INFO
   level:
     root: debug
+    web: debug
