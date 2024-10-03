@@ -4,6 +4,7 @@ on:
   release:
     types: [ published ]
     tags: [ "v*.*.*" ]
+    types: [ published ]
   workflow_dispatch:
 
 env:
