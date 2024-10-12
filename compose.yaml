@@ -1,6 +1,7 @@
 name: justedlev-msrv
 services:
   service-registry:
+    tty: true
     container_name: ${SPRING_APPLICATION_NAME}
     image: justedlev/simple-eureka-server:latest
     build:
@@ -8,10 +9,17 @@ services:
     env_file:
       - .env
     ports:
-      - "8761:${SERVER_PORT}"
+      - "$${SERVER_PORT}:$${SERVER_PORT}"
     healthcheck:
-      interval: 5s
-      timeout: 3s
-      test: [ "CMD", "curl", "-f", "http://localhost:${SERVER_PORT}/actuator/health", "||", "exit 1" ]
+      test: [ "CMD", "curl", "-f", "http://localhost:$${SERVER_PORT}/actuator/health", "||", "exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
     volumes:
-      - ./logs:${LOGGING_FILE_PATH}
+      - ./logs:$${LOGGING_FILE_PATH}
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 1GB
