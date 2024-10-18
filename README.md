@@ -23,9 +23,28 @@ __Simple Eureka Server__ it's a secure `Service Discovery` for easy launch and u
 
 ### 🛠️ Intellij
 
-Clone the repository using `git clone https://github.com/Justedlev/simple-eureka-server.git` and after that run the app local,
-you can use the simple [run configuration](.run/Default.run.xml), that based on [.env](.env)
+To run the app you can use simple run configuration, that based on [.env](.env)
 and [jvm options](.vmoptions)
+
+```xml
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Default" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="envFilePaths">
+      <option value="$PROJECT_DIR$/.env" />
+    </option>
+    <module name="simple-eureka-server" />
+    <selectedOptions>
+      <option name="environmentVariables" />
+    </selectedOptions>
+    <option name="SPRING_BOOT_MAIN_CLASS" value="io.justedlev.msrv.ssr.SimpleEurekaServerApplication" />
+    <option name="VM_PARAMETERS" value="@.vmoptions" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
+
+```
 
 ### 🚢 Docker
 

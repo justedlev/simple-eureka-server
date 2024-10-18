@@ -1,2 +1,13 @@
 -Duser.timezone=UTC
--Dlogging.level.web=trace
+-Duser.language=en
+
+-Djavax.net.ssl.trustStoreProvider=SUN
+-Djavax.net.ssl.trustStoreType=JKS
+-Djavax.net.ssl.trustStore=${USERPROFILE}\.ssl\jstdlvts.jks
+-Djavax.net.ssl.trustStorePassword=secret
+-Djavax.net.ssl.keyStorePassword=secret
+-Djavax.net.ssl.keyPassword=secret
+-Djavax.net.ssl.keyAlias=jstdlvmsrv
+-Djavax.net.ssl.keyStore=${USERPROFILE}\.ssl\jstdlvks.p12
+-Djavax.net.ssl.keyStoreType=PKCS12
+-Djavax.net.ssl.keyStoreProvider=SUN

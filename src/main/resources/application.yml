@@ -4,6 +4,16 @@ server:
     application-display-name: ${spring.application.name}
   error:
     include-message: always
+  ssl:
+    enabled: false
+    trust-store: ${USERPROFILE}/.ssl/jstdlvts.jks
+    trust-store-password: changeit
+    trust-store-type: JKS
+    key-store: ${USERPROFILE}/.ssl/jstdlvks.p12
+    key-alias: jstdlvmsrv
+    key-password: changeit
+    key-store-password: changeit
+    key-store-type: PKCS12
 spring:
   application:
     name: '@project.name@'
