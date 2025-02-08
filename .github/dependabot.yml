@@ -1,6 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "maven"
+    target-branch: "dev"
     directory: "/"
     reviewers:
       - "justedlev"
@@ -12,6 +13,7 @@ updates:
       timezone: Etc/UTC
 
   - package-ecosystem: "github-actions"
+    target-branch: "dev"
     directory: "/"
     reviewers:
       - "justedlev"
