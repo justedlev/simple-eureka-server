@@ -3,7 +3,31 @@ spring:
     user:
       name: eureka
       password: eureka
-      roles: system
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            token-uri: ${KC_TOKEN_URI}
+            issuer-uri: ${KC_ISSUER_URI}
+            authorization-uri: ${KC_AUTH_URI}
+            jwk-set-uri: ${KC_JWKS_URI}
+            user-info-uri: ${KC_USER_INFO_URI}
+            user-name-attribute: preferred_username
+            user-info-authentication-method: header
+        registration:
+          bridgewayhub:
+            provider: keycloak
+            client-id: ${KC_CLIENT_ID}
+            client-secret: ${KC_CLIENT_SECRET}
+            authorization-grant-type: client_credentials
+      resourceserver:
+        jwt:
+          issuer-uri: ${KC_ISSUER_URI}
+          jwk-set-uri: ${KC_JWKS_URI}
+        opaquetoken:
+          introspection-uri: ${KC_INTROSPECTION_URI}
+          client-id: ${KC_CLIENT_ID}
+          client-secret: ${KC_CLIENT_SECRET}
 security:
   whitelist:
     GET:
