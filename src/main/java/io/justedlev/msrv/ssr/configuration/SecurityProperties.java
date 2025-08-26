@@ -26,7 +26,7 @@ import java.util.Map;
  */
 @Getter
 @Setter
-@ConfigurationProperties("security")
+@ConfigurationProperties("config-center.security")
 public class SecurityProperties {
     /**
      * A map that holds the HTTP method as the key and an array of allowed endpoint patterns as the value.
