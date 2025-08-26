@@ -6,7 +6,7 @@ server:
     include-message: always
 spring:
   application:
-    name: '@project.name@'
+    name: eureka
   cloud:
     config:
       enabled: false
