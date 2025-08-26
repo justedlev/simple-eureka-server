@@ -1,6 +1,4 @@
 logging:
-  threshold:
-    console: info
   level:
     root: info
     web: debug
