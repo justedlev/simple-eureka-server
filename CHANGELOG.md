@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
+## [1.6.0](https://github.com/justedlev/simple-eureka-server/compare/v1.5.0...v1.6.0) (2025-08-26)
+
+
+### 🚀 Features
+
+* **security:** improve security configuration ([5f8ff57](https://github.com/justedlev/simple-eureka-server/commit/5f8ff577e6ae544c5fd14560d57d680545095a9c))
+
+
+### ♻️ Refactoring
+
+* **config:** remove `javax.net.ssl` ([c4a578e](https://github.com/justedlev/simple-eureka-server/commit/c4a578ec9a14267db6dd239d07042a56adb18aa8))
+* **config:** remove `logging.file` props ([7403e59](https://github.com/justedlev/simple-eureka-server/commit/7403e5977d1e25b11cbb8e8bb40d97a830f513b0))
+* **config:** remove `logging.threshold` props ([34bed75](https://github.com/justedlev/simple-eureka-server/commit/34bed75cd633f63e808cbf7d6751e53ed575bf36))
+* **config:** use fixed app name ([fc68b74](https://github.com/justedlev/simple-eureka-server/commit/fc68b7462a5d3d0819f4fc175b080868218f318e))
+
 ## [1.5.0](https://github.com/justedlev/simple-eureka-server/compare/v1.4.1...v1.5.0) (2025-08-17)
 
 
