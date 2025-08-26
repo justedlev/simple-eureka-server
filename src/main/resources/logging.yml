@@ -1,7 +1,4 @@
 logging:
-  file:
-    path: ./logs
-    name: ${LOGGING_FILE_PATH:${logging.file.path}}/latest.log
   threshold:
     console: info
   level:
