@@ -27,6 +27,7 @@ import java.util.Map;
  */
 @Getter
 @Setter
+@Configuration
 @ConfigurationProperties(SecurityProperties.PREFIX)
 public class SecurityProperties {
     public static final String PREFIX = "config-center.security";
