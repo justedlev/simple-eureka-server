@@ -10,7 +10,8 @@ services:
       context: ../
       dockerfile: docker/Dockerfile
     ports:
-      - "${SERVER_PORT}:${SERVER_PORT}"
+      - "8761:8761"
+      - "7761:7761"
     deploy:
       resources:
         limits:
