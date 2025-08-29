@@ -11,8 +11,6 @@ services:
       dockerfile: docker/Dockerfile
     ports:
       - "${SERVER_PORT}:${SERVER_PORT}"
-    volumes:
-      - ../logs:${LOGGING_FILE_PATH}
     deploy:
       resources:
         limits:
