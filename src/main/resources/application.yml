@@ -90,8 +90,3 @@ config-center:
       POST:
         - /sso/logout
         - /logout
-logging:
-  level:
-    root: info
-    web: debug
-    org.springframework.security: trace
