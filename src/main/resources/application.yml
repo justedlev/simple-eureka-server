@@ -10,6 +10,9 @@ spring:
   cloud:
     config:
       enabled: false
+  security:
+    user:
+      name: ${spring.application.name:eureka}
 eureka:
   instance:
     instance-id: ${spring.application.name}
