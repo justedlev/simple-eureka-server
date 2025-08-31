@@ -1,12 +1,14 @@
 package io.justedlev.msrv.ssr.configuration;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.autoconfigure.security.oauth2.client.ConditionalOnOAuth2ClientRegistrationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.lang.NonNull;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.CsrfConfigurer;
+import org.springframework.security.config.annotation.web.configurers.HttpBasicConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 
@@ -17,13 +19,15 @@ public class SecurityConfiguration {
     private final SecurityProperties properties;
 
     @Bean
-    public SecurityFilterChain securityFilterChain(@NonNull HttpSecurity httpSecurity) throws Exception {
+    @ConditionalOnOAuth2ClientRegistrationProperties
+    public SecurityFilterChain oauth2SecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
                 .csrf(CsrfConfigurer::disable)
-                .formLogin(Customizer.withDefaults())
+                .httpBasic(HttpBasicConfigurer::disable)
                 .oauth2Login(Customizer.withDefaults())
-                .oauth2ResourceServer(customizer ->
-                        customizer.jwt(Customizer.withDefaults()))
+                .oauth2Client(Customizer.withDefaults())
+                .oauth2ResourceServer(customizer -> customizer
+                        .jwt(Customizer.withDefaults()))
                 .sessionManagement(customizer ->
                         customizer.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .securityMatcher("/eureka/apps", "/eureka/apps/**")
@@ -32,6 +36,16 @@ public class SecurityConfiguration {
                             .forEach((k, v) -> customizer.requestMatchers(k, v).permitAll());
                     customizer.anyRequest().hasAuthority(DEFAULT_AUTHORITY_PREFIX + "discovery:rw");
                 })
+                .build();
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
+        return httpSecurity
+                .csrf(CsrfConfigurer::disable)
+                .httpBasic(Customizer.withDefaults())
+                .formLogin(Customizer.withDefaults())
                 .build();
     }
 }
