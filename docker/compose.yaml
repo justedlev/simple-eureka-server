@@ -10,9 +10,8 @@ services:
       context: ../
       dockerfile: docker/Dockerfile
     ports:
-      - "${SERVER_PORT}:${SERVER_PORT}"
-    volumes:
-      - ../logs:${LOGGING_FILE_PATH}
+      - "8761:8761"
+      - "7761:7761"
     deploy:
       resources:
         limits:

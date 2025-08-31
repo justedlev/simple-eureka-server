@@ -1,4 +1,6 @@
 management:
+  server:
+    port: 7761
   info:
     build:
       enabled: true

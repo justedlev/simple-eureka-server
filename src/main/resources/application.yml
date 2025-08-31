@@ -10,10 +10,25 @@ spring:
   cloud:
     config:
       enabled: false
-  config:
-    import:
-      - 'optional:configserver:'
-      - classpath:/eureka.yml
-      - classpath:/logging.yml
-      - classpath:/security.yml
-      - classpath:/management.yml
+  security:
+    user:
+      name: ${spring.application.name:eureka}
+eureka:
+  instance:
+    instance-id: ${spring.application.name}
+    app-group-name: justedlev-msrv
+    appname: ${spring.application.name}
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    restclient:
+      enabled: true
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+  server:
+    enable-self-preservation: false
+management:
+  server:
+    port: -1
