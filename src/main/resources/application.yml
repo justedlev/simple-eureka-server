@@ -10,9 +10,6 @@ spring:
   cloud:
     config:
       enabled: false
-  config:
-    import:
-      - 'optional:configserver:'
   security:
     oauth2:
       client:
