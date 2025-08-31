@@ -16,7 +16,7 @@ spring:
             provider: keycloak
             client-id: ${KC_CLIENT_ID}
             client-secret: ${KC_CLIENT_SECRET}
-            authorization-grant-type: authorization_code
+            authorization-grant-type: client_credentials
             scope:
               - discovery:rw
           ui:
