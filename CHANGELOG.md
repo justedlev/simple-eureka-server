@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
+## [1.7.0](https://github.com/justedlev/simple-eureka-server/compare/v1.6.0...v1.7.0) (2025-08-31)
+
+
+### 🚀 Features
+
+* **config:** add ui login flow ([b85b4f8](https://github.com/justedlev/simple-eureka-server/commit/b85b4f8231f972326b3cbc0593857870785e0b56))
+* **config:** extract separate `config-client` properties config ([ba2b478](https://github.com/justedlev/simple-eureka-server/commit/ba2b478c5ff87fa32eb205b27560159f4229a9c8))
+* **config:** extract separate `management` profile ([bc67d1f](https://github.com/justedlev/simple-eureka-server/commit/bc67d1fe301b9f4da2e98f064b192d25356a78fa))
+* **config:** extract separate `oauth2` properties config ([88c838c](https://github.com/justedlev/simple-eureka-server/commit/88c838c3283c124be0a7780f0c12c3057fb22e67))
+* **config:** update `lite` prifile ([aaa7ae7](https://github.com/justedlev/simple-eureka-server/commit/aaa7ae7907f0d8d014d040d859d3ff5b1c7e6bd1))
+
+
+### 🐛 Bug Fixes
+
+* use `client_credentials` ([0e6d648](https://github.com/justedlev/simple-eureka-server/commit/0e6d6482f19de3c38b729581f3d7f9d42ca4c410))
+
+
+### ♻️ Refactoring
+
+* **config:** add default user name ([366cfc6](https://github.com/justedlev/simple-eureka-server/commit/366cfc60304e297544c481cee0c04652a1564f95))
+* **config:** enable self initiation ([3145c5e](https://github.com/justedlev/simple-eureka-server/commit/3145c5e91e4d176e42c6826637e6d711efb6a2b2))
+* **config:** extract property PREFIX constant ([aef3f42](https://github.com/justedlev/simple-eureka-server/commit/aef3f42d463fffaf54b774c52dd5bd9f6d1ba134))
+* **config:** move config props to one main file ([f477da5](https://github.com/justedlev/simple-eureka-server/commit/f477da5718ac8968468647b4e8bebed6d15808e3))
+* update SecurityConfiguration.java ([78c3fc0](https://github.com/justedlev/simple-eureka-server/commit/78c3fc0d98fb383ed0d04e670674a7bd5d516fdf))
+
 ## [1.6.0](https://github.com/justedlev/simple-eureka-server/compare/v1.5.0...v1.6.0) (2025-08-26)
 
 
