@@ -1,4 +1,4 @@
-package io.justedlev.msrv.ssr.configuration;
+package io.github.justedlev.servicereg.configuration;
 
 import lombok.Getter;
 import lombok.Setter;
