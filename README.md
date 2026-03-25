@@ -5,8 +5,8 @@
 
 <div id="badges" align="center">
 
-[![language](https://img.shields.io/badge/Java%2017-e6892e.svg?logo=openjdk&logoColor=white)](https://github.com/justedlev/simple-eureka-server)
-[![framework](https://img.shields.io/badge/Spring%20Boot%203-6DB33F.svg?logo=springboot&logoColor=white)](https://docs.spring.io/spring-boot/index.html)
+[![language](https://img.shields.io/badge/Java%2021-e6892e.svg?logo=openjdk&logoColor=white)](https://github.com/justedlev/simple-eureka-server)
+[![framework](https://img.shields.io/badge/Spring%20Boot%204-6DB33F.svg?logo=springboot&logoColor=white)](https://docs.spring.io/spring-boot/index.html)
 [![Docker Image Version](https://img.shields.io/docker/v/justedlev/simple-eureka-server?logo=docker&label=simple-eureka-server)](https://hub.docker.com/repository/docker/justedlev/simple-eureka-server)
 [![license](https://img.shields.io/github/license/justedlev/simple-eureka-server)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 [![stars](https://img.shields.io/github/stars/justedlev/simple-eureka-server)](https://github.com/justedlev/simple-eureka-server/star)
