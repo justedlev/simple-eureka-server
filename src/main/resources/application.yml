@@ -2,8 +2,6 @@ server:
   port: 8761
   servlet:
     application-display-name: ${spring.application.name}
-  error:
-    include-message: always
 spring:
   application:
     name: eureka
@@ -13,6 +11,9 @@ spring:
   security:
     user:
       name: ${spring.application.name:eureka}
+  web:
+    error:
+      include-message: always
 eureka:
   instance:
     instance-id: ${spring.application.name}
