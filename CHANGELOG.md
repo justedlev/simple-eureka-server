@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
+## [2.1.1](https://github.com/justedlev/simple-eureka-server/compare/v2.1.0...v2.1.1) (2026-03-25)
+
+
+### 🔧 CI/CD
+
+* **release-please:** add `README.md` to `exclude-paths` ([6a527b5](https://github.com/justedlev/simple-eureka-server/commit/6a527b508e8dc088df4cb8c707ebae3c94d4f376))
+
 ## [2.1.0](https://github.com/justedlev/simple-eureka-server/compare/v2.0.0...v2.1.0) (2026-03-25)
 
 
