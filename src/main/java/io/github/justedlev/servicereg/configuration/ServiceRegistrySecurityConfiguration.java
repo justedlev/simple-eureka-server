@@ -14,8 +14,8 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @RequiredArgsConstructor
-    private static final String DEFAULT_AUTHORITY_PREFIX = "SCOPE_";
 public class ServiceRegistrySecurityConfiguration {
+    private static final String DEFAULT_AUTHORITY_PREFIX = ServiceRegistrySecurityConfigurationProperties.SCOPE_PREFIX;
     private final ServiceRegistrySecurityConfigurationProperties properties;
 
     @Bean
