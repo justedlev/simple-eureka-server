@@ -1,4 +1,4 @@
-package io.justedlev.msrv.ssr;
+package io.github.justedlev.servicereg;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

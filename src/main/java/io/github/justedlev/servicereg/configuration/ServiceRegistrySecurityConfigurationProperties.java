@@ -1,4 +1,4 @@
-package io.justedlev.msrv.ssr.configuration;
+package io.github.justedlev.servicereg.configuration;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -28,9 +28,11 @@ import java.util.Map;
 @Getter
 @Setter
 @Configuration
-@ConfigurationProperties(SecurityProperties.PREFIX)
-public class SecurityProperties {
+@ConfigurationProperties(ServiceRegistrySecurityConfigurationProperties.PREFIX)
+public class ServiceRegistrySecurityConfigurationProperties {
     public static final String PREFIX = "config-center.security";
+    public static final String ROLE_PREFIX = "ROLE_";
+    public static final String SCOPE_PREFIX = "SCOPE_";
     /**
      * A map that holds the HTTP method as the key and an array of allowed endpoint patterns as the value.
      * <p>

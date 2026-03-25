@@ -2,17 +2,26 @@ server:
   port: 8761
   servlet:
     application-display-name: ${spring.application.name}
-  error:
-    include-message: always
 spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.security.oauth2.server.resource.autoconfigure.servlet.OAuth2ResourceServerAutoConfiguration
+      - org.springframework.boot.amqp.autoconfigure.RabbitAutoConfiguration
   application:
     name: eureka
+  rabbitmq:
+    enabled: false
   cloud:
+    bus:
+      enabled: false
     config:
       enabled: false
   security:
     user:
       name: ${spring.application.name:eureka}
+  web:
+    error:
+      include-message: always
 eureka:
   instance:
     instance-id: ${spring.application.name}

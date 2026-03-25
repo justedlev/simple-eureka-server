@@ -1,4 +1,4 @@
-package io.justedlev.msrv.ssr.configuration;
+package io.github.justedlev.servicereg.configuration;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -14,9 +14,9 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @RequiredArgsConstructor
-public class SecurityConfiguration {
-    private static final String DEFAULT_AUTHORITY_PREFIX = "SCOPE_";
-    private final SecurityProperties properties;
+public class ServiceRegistrySecurityConfiguration {
+    private static final String DEFAULT_AUTHORITY_PREFIX = ServiceRegistrySecurityConfigurationProperties.SCOPE_PREFIX;
+    private final ServiceRegistrySecurityConfigurationProperties properties;
 
     @Bean
     @ConditionalOnOAuth2ClientRegistrationProperties
