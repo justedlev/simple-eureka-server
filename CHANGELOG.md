@@ -4,6 +4,38 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
+## [2.0.0](https://github.com/justedlev/simple-eureka-server/compare/v1.7.0...v2.0.0) (2026-03-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** bump eclipse-temurin to 21-jdk-jammy in /docker
+* bump java to 21
+* **deps:** bump org.springframework.cloud:spring-cloud-dependencies to 2025.1.1
+* **deps:** bump org.springframework.boot:spring-boot-starter-parent to 4.0.4
+
+### 🐛 Bug Fixes
+
+* **config:** use correct imports ([9668f5c](https://github.com/justedlev/simple-eureka-server/commit/9668f5c425632139bd6d6fbf5b664e05ec3cbb04))
+
+
+### ♻️ Refactoring
+
+* **config:** method never thrown exception ([36f6e27](https://github.com/justedlev/simple-eureka-server/commit/36f6e2712a18b609648d073f0f78c10dcb26fb25))
+
+
+### 🔧 CI/CD
+
+* **gha:** update `release-please-config.json` ([205220c](https://github.com/justedlev/simple-eureka-server/commit/205220ce65415de11a0f60555bdd358c9eab533d))
+
+
+### 🛠️ Build
+
+* bump java to 21 ([7a48cf7](https://github.com/justedlev/simple-eureka-server/commit/7a48cf75e0ade1155c5df08a1a35dd383375a8cc))
+* **deps:** bump eclipse-temurin to 21-jdk-jammy in /docker ([147d7bd](https://github.com/justedlev/simple-eureka-server/commit/147d7bdbeb36ce7746ad25202d4928e7a413a39d))
+* **deps:** bump org.springframework.boot:spring-boot-starter-parent to 4.0.4 ([cfa68ec](https://github.com/justedlev/simple-eureka-server/commit/cfa68ec72c58fc6d60020ec06ecc601753ae8780))
+* **deps:** bump org.springframework.cloud:spring-cloud-dependencies to 2025.1.1 ([395da72](https://github.com/justedlev/simple-eureka-server/commit/395da722212801bc164316932cf80c2f66c27ee5))
+
 ## [1.7.0](https://github.com/justedlev/simple-eureka-server/compare/v1.6.0...v1.7.0) (2025-08-31)
 
 
