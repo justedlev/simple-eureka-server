@@ -16,7 +16,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @RequiredArgsConstructor
 public class SecurityConfiguration {
     private static final String DEFAULT_AUTHORITY_PREFIX = "SCOPE_";
-    private final SecurityProperties properties;
+    private final ServiceRegistrySecurityConfigurationProperties properties;
 
     @Bean
     @ConditionalOnOAuth2ClientRegistrationProperties

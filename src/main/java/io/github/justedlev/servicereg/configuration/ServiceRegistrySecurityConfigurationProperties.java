@@ -28,8 +28,8 @@ import java.util.Map;
 @Getter
 @Setter
 @Configuration
-@ConfigurationProperties(SecurityProperties.PREFIX)
-public class SecurityProperties {
+@ConfigurationProperties(ServiceRegistrySecurityConfigurationProperties.PREFIX)
+public class ServiceRegistrySecurityConfigurationProperties {
     public static final String PREFIX = "config-center.security";
     /**
      * A map that holds the HTTP method as the key and an array of allowed endpoint patterns as the value.
