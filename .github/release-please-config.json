@@ -19,6 +19,9 @@
       "pull-request-title-pattern": "🚀 Release v${version}",
       "pull-request-header": "## 📦 What's Changed",
       "pull-request-footer": "Thanks to all contributors! 🙌",
+      "exclude-paths": [
+        "README.md"
+      ],
       "changelog-sections": [
         {
           "type": "feat",
