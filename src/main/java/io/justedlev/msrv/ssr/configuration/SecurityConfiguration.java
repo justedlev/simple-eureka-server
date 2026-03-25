@@ -20,7 +20,7 @@ public class SecurityConfiguration {
 
     @Bean
     @ConditionalOnOAuth2ClientRegistrationProperties
-    public SecurityFilterChain oauth2SecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
+    public SecurityFilterChain oauth2SecurityFilterChain(HttpSecurity httpSecurity) {
         return httpSecurity
                 .csrf(CsrfConfigurer::disable)
                 .httpBasic(HttpBasicConfigurer::disable)
@@ -41,7 +41,7 @@ public class SecurityConfiguration {
 
     @Bean
     @ConditionalOnMissingBean
-    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
+    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity httpSecurity) {
         return httpSecurity
                 .csrf(CsrfConfigurer::disable)
                 .httpBasic(Customizer.withDefaults())
