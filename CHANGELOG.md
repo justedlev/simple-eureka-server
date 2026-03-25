@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
+## [2.0.0](https://github.com/justedlev/simple-eureka-server/compare/v1.7.0...v2.0.0) (2026-03-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** migrate to spring boot v4
+
+### build
+
+* **deps:** bump springframework deps ([49cc6e2](https://github.com/justedlev/simple-eureka-server/commit/49cc6e2054d821855c93ec91887249c7419ccf0c))
+
 ## [1.7.0](https://github.com/justedlev/simple-eureka-server/compare/v1.6.0...v1.7.0) (2025-08-31)
 
 
