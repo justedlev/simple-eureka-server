@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
+## [1.7.1](https://github.com/justedlev/simple-eureka-server/compare/v1.7.0...v1.7.1) (2026-03-25)
+
+
+### 🔧 CI/CD
+
+* **gha:** update `release-please-config.json` ([205220c](https://github.com/justedlev/simple-eureka-server/commit/205220ce65415de11a0f60555bdd358c9eab533d))
+
 ## [1.7.0](https://github.com/justedlev/simple-eureka-server/compare/v1.6.0...v1.7.0) (2025-08-31)
 
 
