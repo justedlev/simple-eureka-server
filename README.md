@@ -16,7 +16,7 @@
 
 ## 📋 About
 
-__Simple Eureka Server__ it's a secure `Service Discovery` for easy launch and using, based on the `Spring Boot 3` and
+__Simple Eureka Server__ it's a secure `Service Discovery` for easy launch and using, based on the `Spring Boot 4` and
 `Eureka Server`.
 
 ## ▶️ Run
