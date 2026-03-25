@@ -2,7 +2,7 @@ package io.justedlev.msrv.ssr.configuration;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
-import org.springframework.boot.autoconfigure.security.oauth2.client.ConditionalOnOAuth2ClientRegistrationProperties;
+import org.springframework.boot.security.oauth2.client.autoconfigure.ConditionalOnOAuth2ClientRegistrationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
@@ -20,7 +20,7 @@ public class SecurityConfiguration {
 
     @Bean
     @ConditionalOnOAuth2ClientRegistrationProperties
-    public SecurityFilterChain oauth2SecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
+    public SecurityFilterChain oauth2SecurityFilterChain(HttpSecurity httpSecurity) {
         return httpSecurity
                 .csrf(CsrfConfigurer::disable)
                 .httpBasic(HttpBasicConfigurer::disable)
@@ -41,7 +41,7 @@ public class SecurityConfiguration {
 
     @Bean
     @ConditionalOnMissingBean
-    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
+    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity httpSecurity) {
         return httpSecurity
                 .csrf(CsrfConfigurer::disable)
                 .httpBasic(Customizer.withDefaults())
