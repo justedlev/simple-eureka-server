@@ -9,7 +9,7 @@
     </parent>
     <groupId>io.github.justedlev.msrv</groupId>
     <artifactId>simple-eureka-server</artifactId>
-    <version>1.7.0</version>
+    <version>2.0.0</version>
     <name>Eureka Server</name>
     <description>Service Discovery</description>
     <url>https://github.com/justedlev/${project.artifactId}</url>
