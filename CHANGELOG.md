@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
+## [2.1.0](https://github.com/justedlev/simple-eureka-server/compare/v2.0.0...v2.1.0) (2026-03-25)
+
+
+### 🚀 Features
+
+* add constants ([dd80cd1](https://github.com/justedlev/simple-eureka-server/commit/dd80cd1b1d85977e0b31d489e4f24ce54b663ef6))
+* add org.springframework.boot.autoconfigure.AutoConfiguration.imports ([818da83](https://github.com/justedlev/simple-eureka-server/commit/818da831c19b063374b2d2491009709ad44551bd))
+* add ServiceRegistryOAuth2ResourceServerAutoConfiguration.java ([572f228](https://github.com/justedlev/simple-eureka-server/commit/572f228b6fd6fc1139b4c175dd5b57d1ecc9374e))
+* add ServiceRegistryRabbitMQAutoConfiguration.java ([4e47651](https://github.com/justedlev/simple-eureka-server/commit/4e47651f524d6cbb569144cbd61aea7932870d3b))
+
+
+### 🐛 Bug Fixes
+
+* **props:** exclude autoconfig on default profile ([c93a7ab](https://github.com/justedlev/simple-eureka-server/commit/c93a7ab43c79760f93c2f9f75fb206718c102f11))
+* **props:** fix deprecated properties ([2cdbc5a](https://github.com/justedlev/simple-eureka-server/commit/2cdbc5a9ddfadb36996b794f99b5de85b379a542))
+* **props:** use correct package name ([8221c1d](https://github.com/justedlev/simple-eureka-server/commit/8221c1d86f7cf50dc22fe3c1a1b6f50789d9b809))
+
+
+### ♻️ Refactoring
+
+* rename root package ([2ad0d7d](https://github.com/justedlev/simple-eureka-server/commit/2ad0d7de1943ff3f887f0d5b3c8de82b3bcc14d7))
+* rename SecurityConfiguration.java to ServiceRegistrySecurityConfiguration.java ([e6b1f8f](https://github.com/justedlev/simple-eureka-server/commit/e6b1f8f3ddbdf6ea395a97b5d114bb5d09c0d5ea))
+* rename SecurityProperties.java to ServiceRegistrySecurityConfigurationProperties.java ([bc9250d](https://github.com/justedlev/simple-eureka-server/commit/bc9250d4e8079d6e228b1ffd5bf59e03a970c92d))
+* use ServiceRegistrySecurityConfigurationProperties.SCOPE_PREFIX constant as DEFAULT_AUTHORITY_PREFIX ([4a02039](https://github.com/justedlev/simple-eureka-server/commit/4a020399e0c0c4a9e48f2782ae377f0c2ced2d28))
+
 ## [2.0.0](https://github.com/justedlev/simple-eureka-server/compare/v1.7.0...v2.0.0) (2026-03-25)
 
 
