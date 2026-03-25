@@ -42,18 +42,19 @@
         },
         {
           "type": "chore",
-          "section": "🧹 Chores",
-          "hidden": true
+          "section": "🧹 Chores"
         },
         {
           "type": "style",
-          "section": "🎨 Code Style",
-          "hidden": true
+          "section": "🎨 Code Style"
         },
         {
           "type": "ci",
-          "section": "🔧 CI/CD",
-          "hidden": true
+          "section": "🔧 CI/CD"
+        },
+        {
+          "type": "build",
+          "section": "🛠️ Build"
         }
       ]
     }
