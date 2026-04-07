@@ -38,14 +38,4 @@ public class ServiceRegistrySecurityConfiguration {
                 })
                 .build();
     }
-
-    @Bean
-    @ConditionalOnMissingBean
-    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity httpSecurity) {
-        return httpSecurity
-                .csrf(CsrfConfigurer::disable)
-                .httpBasic(Customizer.withDefaults())
-                .formLogin(Customizer.withDefaults())
-                .build();
-    }
 }
