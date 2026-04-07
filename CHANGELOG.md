@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
+## [2.1.1](https://github.com/justedlev/simple-eureka-server/compare/v2.1.0...v2.1.1) (2026-04-07)
+
+
+### 🐛 Bug Fixes
+
+* **config:** remove default `SecurityFilterChain` bean definition ([ceac4ef](https://github.com/justedlev/simple-eureka-server/commit/ceac4ef2a297587e8ebbef95e4f7bd12bdb83147))
+* **config:** update `spring.security` configuration properties ([78e6f26](https://github.com/justedlev/simple-eureka-server/commit/78e6f262317bebe9f4b28e8057fe229e15850383))
+
+
+### 🔧 CI/CD
+
+* **gha:** add more docker image tags ([26f0cea](https://github.com/justedlev/simple-eureka-server/commit/26f0ceabc4cb77248b576d53f06aa99ad6113516))
+* **release-please:** add `README.md` to `exclude-paths` ([6a527b5](https://github.com/justedlev/simple-eureka-server/commit/6a527b508e8dc088df4cb8c707ebae3c94d4f376))
+* **workflow:** add `README.md` to `paths-ignore` in `workflows/release-please.yml` ([09612b8](https://github.com/justedlev/simple-eureka-server/commit/09612b8ddbbab3ea4e40794e25f4d755af1b103d))
+
 ## [2.1.0](https://github.com/justedlev/simple-eureka-server/compare/v2.0.0...v2.1.0) (2026-03-25)
 
 
