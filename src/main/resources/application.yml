@@ -17,8 +17,9 @@ spring:
     config:
       enabled: false
   security:
-    user:
-      name: ${spring.application.name:eureka}
+    oauth2:
+      resourceserver:
+        enabled: false
   web:
     error:
       include-message: always
@@ -31,6 +32,7 @@ eureka:
     hostname: localhost
   client:
     restclient:
+      # noinspection SpringBootApplicationYaml
       enabled: true
     register-with-eureka: false
     fetch-registry: false
