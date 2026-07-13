@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
+## [2.1.2](https://github.com/justedlev/simple-eureka-server/compare/v2.1.1...v2.1.2) (2026-07-13)
+
+
+### 🔧 CI/CD
+
+* **gha:** update `codeql.yml` to use JDK 21 and upgrade actions ([a77ed26](https://github.com/justedlev/simple-eureka-server/commit/a77ed2612139e80c7618aff0c5185758c1926804))
+
 ## [2.1.1](https://github.com/justedlev/simple-eureka-server/compare/v2.1.0...v2.1.1) (2026-04-07)
 
 
