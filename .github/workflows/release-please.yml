@@ -23,7 +23,7 @@ jobs:
     steps:
       - id: checkout
         name: 📥 Checkout code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       - id: release
         name: 🔄 Run release-please
