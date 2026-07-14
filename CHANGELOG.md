@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
+## [2.1.2](https://github.com/justedlev/simple-eureka-server/compare/v2.1.1...v2.1.2) (2026-07-14)
+
+
+### 🐛 Bug Fixes
+
+* **config:** update OAuth2 resource server import path in auto-configuration ([69aac22](https://github.com/justedlev/simple-eureka-server/commit/69aac22f1132de2062416a95338774e6bbab9045))
+
+
+### 🔧 CI/CD
+
+* **gha:** update GitHub Actions versions across workflows ([28e1eb6](https://github.com/justedlev/simple-eureka-server/commit/28e1eb6441419b76e0eea01345448f673777aa9e))
+
+
+### 🛠️ Build
+
+* **deps:** update dependencies and plugins versions ([7513ae5](https://github.com/justedlev/simple-eureka-server/commit/7513ae597a66c900aca560b27943471cdfdc1c8d))
+* **docker:** update layertools command for extracting layers and launcher ([141c3ac](https://github.com/justedlev/simple-eureka-server/commit/141c3ac3d84888df81a245064c656476d1d8150c))
+
 ## [2.1.1](https://github.com/justedlev/simple-eureka-server/compare/v2.1.0...v2.1.1) (2026-04-07)
 
 
