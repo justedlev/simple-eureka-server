@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
+## [2.1.3](https://github.com/justedlev/simple-eureka-server/compare/v2.1.2...v2.1.3) (2026-07-14)
+
+
+### 🐛 Bug Fixes
+
+* **config:** correct OAuth2ResourceServerAutoConfiguration import path ([02dee75](https://github.com/justedlev/simple-eureka-server/commit/02dee752bc6f88415ee29031dc9cbe3fc380e793))
+* **docker:** update layertools command to use `tools` mode and correct extract arguments ([7f30c84](https://github.com/justedlev/simple-eureka-server/commit/7f30c8405899d6ca55b7c3f0e8bf3eb606ba6fd3))
+
+
+### 🔧 CI/CD
+
+* **gha:** upgrade GitHub Actions to latest versions across workflows ([e224c39](https://github.com/justedlev/simple-eureka-server/commit/e224c393668807df457aa9210f157cb30502cdd9))
+
+
+### 🛠️ Build
+
+* **deps:** update Spring Boot, Spring Cloud, and Maven plugin versions ([3acba5f](https://github.com/justedlev/simple-eureka-server/commit/3acba5f8f17bc007adad1a9339c6f17f37ce8095))
+
 ## [2.1.2](https://github.com/justedlev/simple-eureka-server/compare/v2.1.1...v2.1.2) (2026-07-13)
 
 
