@@ -4,28 +4,6 @@ All notable changes to this project will be documented in this file.
 
 This project uses **[Conventional Commits](https://www.conventionalcommits.org/)** and is powered by **[release-please](https://github.com/googleapis/release-please)**.
 
-## [2.1.3](https://github.com/justedlev/simple-eureka-server/compare/v2.1.2...v2.1.3) (2026-07-14)
-
-
-### 🛠️ Build
-
-* **deps-dev:** bump org.apache.maven.plugins:maven-jar-plugin ([38b47b4](https://github.com/justedlev/simple-eureka-server/commit/38b47b4e88198f0758f7c61912fb49aa38586492))
-* **deps-dev:** bump org.apache.maven.plugins:maven-jar-plugin from 3.4.2 to 3.5.0 ([59ac66c](https://github.com/justedlev/simple-eureka-server/commit/59ac66ca8e9abd97af0828ac96183713b6d38eb3))
-* **deps:** bump actions/checkout from 4 to 7 ([4d6f045](https://github.com/justedlev/simple-eureka-server/commit/4d6f045c2990fa3259a67d266d4dffb1788cd16a))
-* **deps:** bump actions/checkout from 4 to 7 ([db8dda1](https://github.com/justedlev/simple-eureka-server/commit/db8dda1400c8499951886bb640e808d193b12bb8))
-* **deps:** bump docker/build-push-action from 6 to 7 ([2095442](https://github.com/justedlev/simple-eureka-server/commit/2095442cefe7ce52e55481c7af7e6a1e80476f0d))
-* **deps:** bump docker/build-push-action from 6 to 7 ([a8aa9d6](https://github.com/justedlev/simple-eureka-server/commit/a8aa9d62ab625d5c9725b9d99ff7698692736539))
-* **deps:** bump docker/login-action from 3 to 4 ([f029afe](https://github.com/justedlev/simple-eureka-server/commit/f029afee100465ad1ed674a154f673e6219d5a89))
-* **deps:** bump docker/login-action from 3 to 4 ([ef30658](https://github.com/justedlev/simple-eureka-server/commit/ef30658c522ed344ace144e295157661db0cc39c))
-* **deps:** bump docker/metadata-action from 5 to 6 ([8489ae8](https://github.com/justedlev/simple-eureka-server/commit/8489ae83ec4b10229aafc6130319e7e017355a6c))
-* **deps:** bump docker/metadata-action from 5 to 6 ([6d3abd8](https://github.com/justedlev/simple-eureka-server/commit/6d3abd8dd3afe286df38d68d01114e216a62b0f4))
-* **deps:** bump github/codeql-action from 3 to 4 ([3e15fdb](https://github.com/justedlev/simple-eureka-server/commit/3e15fdbeb68e189b294e22fe66a78582f6292a76))
-* **deps:** bump github/codeql-action from 3 to 4 ([011b806](https://github.com/justedlev/simple-eureka-server/commit/011b806b7f75ddea1e826b759b058e8b1b05ed86))
-* **deps:** bump org.springframework.boot:spring-boot-starter-parent ([ff44596](https://github.com/justedlev/simple-eureka-server/commit/ff44596d38130166258428572b34ea86cae109d2))
-* **deps:** bump org.springframework.boot:spring-boot-starter-parent from 4.0.4 to 4.1.0 ([dcca3a3](https://github.com/justedlev/simple-eureka-server/commit/dcca3a35acebd4babc9a242c6b0ce9edd5ef8373))
-* **deps:** bump org.springframework.cloud:spring-cloud-dependencies ([4899cb4](https://github.com/justedlev/simple-eureka-server/commit/4899cb44bd0563d583cd677fe9e4f1e2b20a4db6))
-* **deps:** bump org.springframework.cloud:spring-cloud-dependencies from 2025.1.1 to 2025.1.2 ([362cd99](https://github.com/justedlev/simple-eureka-server/commit/362cd995f1a719acd67935a01d24d7b3549d70dd))
-
 ## [2.1.2](https://github.com/justedlev/simple-eureka-server/compare/v2.1.1...v2.1.2) (2026-07-13)
 
 
